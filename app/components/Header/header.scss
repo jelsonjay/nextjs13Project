@@ -1,0 +1,45 @@
+@use '../../scss/' as *;
+
+.header{
+  background-color: aliceblue;
+  width: 100%;
+  height: 50px;
+  padding: 4rem;
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .left{
+
+
+    .brand{
+      font-weight: bold;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+    span{
+    color: $primary;;
+    }
+  }
+
+  .rigth{
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+
+  a{
+      text-decoration: none;
+  }
+
+  }
+  }
+}
+
+    hr {
+      width: 100%;
+     
+      border: 3px solid $primary;
+    }

@@ -1,0 +1,25 @@
+@use '../scss/' as *;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-transform: none;
+}
+
+ul{
+  list-style: none;
+}
+
+
+body{
+  background-color: $bg;
+  color: $white;
+}
+
+main{
+  padding: 4rem;
+}
