@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 async function getRepContents(name){
    await new Promise((resolve) => setTimeout(resolve, 2000))
-  const res = await fetch(`https://api.github.com/repos/jelsonjay/${name}/contents`)
+  const res = await fetch(`https://api.github.com/repos/jelsonjay/${name}/contents`,  {next:{revalidate:60}})
 
   const contents = await res.json()
   return contents

@@ -1,33 +1,45 @@
-
+@use '../../scss/' as *;
 
 .repo{
-  width: 100%;
+  width: 1100px;
+  margin: 2rem auto;
   gap:1rem;
-  background-color: antiquewhite;
-
-
+  
   h1{
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    grid-gap: 1rem;
-   
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 1rem;
+     
+     
+    a{
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      color: hsl(197, 93%, 21%);
+    }
 
     .box{
     background-color: rgb(240, 240, 240);
     width: 350px;
-    height: 250px;
+    height: 150px;
     border-radius: .5rem;
+    border: 2px solid $primary;
+    cursor: pointer;
     }
 
    .details{
     display: flex;
     justify-content: space-around;
+    padding: 1rem;
    }
   }
 
